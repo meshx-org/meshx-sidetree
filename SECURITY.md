@@ -1,12 +1,12 @@
-# Transmute Security Policy
+# MeshX Security Policy
 
-## Reporting a Security Bug
+## Reporting a Vulnerability
 
-If you think you have discovered a security issue in any of the Transmute projects, we'd love to hear from you. We will take
+If you think you have discovered a security issue in any of the MeshX projects, we'd love to hear from you. We will take
 all security bugs seriously and if confirmed upon investigation we will patch it within a reasonable amount of time and
 release a public security bulletin discussing the impact and credit the discoverer.
 
 The best way to report a security bug is to email a description of the flaw and any related information (e.g.
-reproduction steps, version) to [security at transmute dot industries](mailto:security@transmute.industries).
+reproduction steps, version) to [security@meshx.co](mailto:security@meshx.co).
 
-From there we'll work with you to assess the bug and decide the appropriate path forward.
+Please do **not** create a public GitHub issue.

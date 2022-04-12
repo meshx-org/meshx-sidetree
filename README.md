@@ -1,16 +1,43 @@
-# Sidetree.js 
+<!--
+parent:
+  order: false
+-->
 
-[![npm version](https://badge.fury.io/js/%40sidetree%2Fcore.svg)](https://badge.fury.io/js/%40sidetree%2Fcore) ![Continuous Integration](https://github.com/transmute-industries/sidetree.js/workflows/CI/badge.svg)
+<div align="center">
+  <h1>MeshX Sidetree</h1>
+</div>
 
-### What is Sidetree.js
+<!-- Header -->
+<p align="center">
+    <img src="./docs/images/meshx-sidetree-header.png" alt="MeshX Sidetree">
+</p>
 
-Sidetree.js is a simple-as-possible TypeScript implementation of the Sidetree version
+<!-- Badges -->
+
+<div align="center">
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/meshx-org/meshx-sidetree?color=g)
+![Continuous Integration](https://github.com/meshx-org/meshx-sidetree/workflows/CI/badge.svg)
+![Lines of code](https://img.shields.io/tokei/lines/github/meshx-org/meshx-sidetree)
+[![License: Apache-2.0](https://img.shields.io/github/license/meshx-org/sidetree-sdk)](https://opensource.org/licenses/Apache-2.0)
+
+</div>
+
+---
+
+## Welcome!
+
+MeshX Sidetree is an open source fork of [Sidetree.js](https://github.com/transmute-industries/sidetree.js) by Transmute Industries.
+
+### What is MeshX Sidetree
+
+MeshX Sidetree is a simple-as-possible TypeScript implementation of the Sidetree version
 1.0 protocol. The purpose of the Sidetree protocol is to create a blockchain based
 public key infrastructure, where rather than having a central authority that can
 accept or revoke keys, by having the blockchain act as a whitness for regestering
 public keys, anyone can publish a public key that can be used to establish identity.
 
-### How Does Sidetree.js Work?
+### How Does MeshX Sidetree Work?
 
 The Sidetree protocol describes using a Content Addressable Storage and a Ledger
 to establish a public key infrastructure. What this boils down to is that public keys
@@ -27,32 +54,43 @@ However since the interfaces for what needs to be implemented is flexible, we ca
 implement DID methods such as Photon which uses Amazon QLDB for a ledger, and Amazon S3
 for content addressable storage.
 
-### Sidetree Based DID Methods
+<!-- 
+## Public MeshX Sidetree Nodes
 
-The following did methods are supported or intended to be supported (or planned to be supported) by the the Sidetree.js implementation. More information on how to set up a node can be in the [Dashboard](packages/dashboard/) package. 
+- https://ropsten.element.meshx.co/
+- https://element.shellshop.lol/ 
+-->
 
-| Method        | Spec                                                                                                    | Ledger             | Storage   | Support |
-|---------------|---------------------------------------------------------------------------------------------------------|--------------------|-----------|---------|
-| did:elem      | [spec](packages/did-method-element/README.md)                                                           | Ethereum           | IPFS      | Full    |
-| did:photon    | [spec](packages/did-method-photon/README.md)                                                            | Amazon QLDB        | Amazon S3 | Full    |
-| did:ion       | [spec](https://github.com/decentralized-identity/ion)                                                   | Bitcoin            | IPFS      | [Planned](https://github.com/transmute-industries/sidetree.js/issues/379) |
-| did:orb | [spec](https://trustbloc.github.io/did-method-orb/) | Hyperledger Fabric | IPFS      | [Planned](https://github.com/transmute-industries/sidetree.js/issues/380) |
+<!--## Project Resources
 
-### Public Sidetree.js Nodes
+[TBD]
 
-**Element**
-
-- https://ropsten.element.transmute.industries/
-- https://element.shellshop.lol/
+- [Project Website](https://opensearch.org/)
+- [Downloads](https://opensearch.org/downloads.html)
+- [Documentation](https://opensearch.org/docs/)
+- Need help? Try [Forums](https://discuss.opendistrocommunity.dev/)
+- [Project Principles](https://opensearch.org/#principles)
+- [Contributing to OpenSearch](CONTRIBUTING.md)
+- [Maintainer Responsibilities](MAINTAINERS.md)
+- [Admin Responsibilities](ADMINS.md)
+- [Release Management](RELEASING.md)
+- [Testing](TESTING.md)
+- [Security](SECURITY.md)
+-->
 
 ## Developers Guide
 
 See [Development](./DEVELOPMENT.md)
 
+<!--
 ## Commercial Support
 
-Commercial support for these libraries is available upon request from
-Transmute: [support at transmute dot industries](mailto:support@transmute.industries)
+Commercial support for these libraries is available upon request from MeshX: [support@meshx.co](mailto:support@meshx.co)
+-->
+
+## Code of Conduct
+
+This project has adopted the [Contributor Covenant Code of Conduct v2.1](CODE_OF_CONDUCT.md). For more information see the [Code of Conduct FAQ](https://www.contributor-covenant.org/faq), or contact [opensource@meshx.co](mailto:opensource@meshx.co) with any additional questions or comments.
 
 ## Security Policy
 
@@ -60,4 +98,16 @@ Please see our [security policy](./SECURITY.md) for additional details about res
 
 ## License
 
-[Apache-2.0](./LICENSE) © Transmute Industries Inc.
+This project is licensed under the [Apache v2.0 License](LICENSE.txt).
+
+## Copyright
+
+Copyright MeshX Sidetree Contributors. See [NOTICE](NOTICE.txt) for details.
+
+<!--
+## Trademark
+
+MeshX Sidetree is a registered trademark of Amazon Web Services.
+
+MeshX Sidetree includes certain Apache-licensed Elasticsearch code from Elasticsearch B.V. and other source code. Elasticsearch B.V. is not the source of that other source code. ELASTICSEARCH is a registered trademark of Elasticsearch B.V.
+-->
