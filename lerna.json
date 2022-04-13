@@ -14,9 +14,7 @@
     "packages/ledger",
     "packages/ledger-ethereum",
     "packages/ledger-qldb",
-    "packages/test-vectors",
-    "packages/wallet",
-    "packages/dashboard"
+    "packages/test-vectors"
   ],
   "version": "0.3.1-unstable.58"
 }

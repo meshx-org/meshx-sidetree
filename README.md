@@ -17,6 +17,7 @@ parent:
 <div align="center">
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/meshx-org/meshx-sidetree?color=g)
+[![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://npm.im/tsdx)
 [![Continuous Integration](https://github.com/meshx-org/meshx-sidetree/workflows/CI/badge.svg)](https://github.com/meshx-org/meshx-sidetree/actions/workflows/ci.yml)
 ![Lines of code](https://img.shields.io/tokei/lines/github/meshx-org/meshx-sidetree)
 [![License: Apache-2.0](https://img.shields.io/github/license/meshx-org/sidetree-sdk)](https://opensource.org/licenses/Apache-2.0)

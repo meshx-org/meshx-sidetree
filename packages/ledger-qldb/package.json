@@ -19,7 +19,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "IMPORT_SQLITE=true tsdx test",
+    "test": "cross-env IMPORT_SQLITE=true tsdx test",
     "lint": "tsdx lint src",
     "lint:fix": "tsdx lint src --fix",
     "prepare": "tsdx build"
