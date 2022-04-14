@@ -6,7 +6,6 @@
 - Replace node only dependencies with js dependencies that can run in the browser
 - Add more unit tests
 - Add integration tests
-- Add support for universal wallet
 - Add support for encrypted data vaults and JSON-LD
 - Add support for did:elem
 - Add support for did:photon

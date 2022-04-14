@@ -8,22 +8,17 @@ import { ConsoleLogger } from '@sidetree/common';
 
 export const getTestNodeIntance = async (sideTreeNodeCoreConfig: {
   batchingIntervalInSeconds: number;
+  blockchainServiceUri: string;
   observingIntervalInSeconds: number;
   mongoDbConnectionString: string;
   databaseName: string;
   didMethodName: string;
   maxConcurrentDownloads: number;
-  port: number;
 }) => {
   const cas: any = new MockCas();
   await cas.initialize();
   const ledger: any = new MockLedger();
-  const sidetreeNodeInstance = new Core(
-    sideTreeNodeCoreConfig as any,
-    sidetreeTestNodeCoreVersions as any,
-    cas,
-    ledger
-  );
+  const sidetreeNodeInstance = new Core(sideTreeNodeCoreConfig, sidetreeTestNodeCoreVersions as any, cas, ledger);
   await sidetreeNodeInstance.initialize(new ConsoleLogger());
   return sidetreeNodeInstance;
 };

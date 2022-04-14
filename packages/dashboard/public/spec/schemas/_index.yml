@@ -1,5 +1,0 @@
-SidetreeOperation:
-  $ref: './SidetreeOperation.yml'
-
-OperationResponse:
-  $ref: './OperationResponse.yml'
