@@ -42,7 +42,7 @@
     "@sidetree/ledger": "^0.3.1-unstable.58",
     "mongodb": "^4.5.0",
     "semver": "^7.3.5",
-    "time-span": "3.1.0"
+    "time-span": "5.0.0"
   },
   "homepage": "https://github.com/transmute-industries/sidetree.js/tree/main/packages/did-method",
   "repository": {
