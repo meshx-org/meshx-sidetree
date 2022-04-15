@@ -11,8 +11,7 @@
   "module": "dist/ethereum.esm.js",
   "version": "0.3.1-unstable.58",
   "license": "Apache-2.0",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "src/index.ts",
   "engines": {
     "node": ">=10"
   },
@@ -23,7 +22,6 @@
     "test": "tsdx test",
     "lint": "tsdx lint src",
     "lint:fix": "tsdx lint src --fix",
-    "prepare": "tsdx build",
     "contracts:test": "truffle test",
     "contracts:migrate:dev": "truffle migrate --network development --reset",
     "contracts:migrate:ropsten": "truffle migrate --network ropsten"

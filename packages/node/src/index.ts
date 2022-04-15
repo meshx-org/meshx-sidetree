@@ -20,7 +20,7 @@ export const convertSidetreeStatusToHttpStatus = (status: string) => {
 };
 
 async function main() {
-  const sidetree = await getTestNodeInstance(config);
+  const sidetree = await getTestNodeInstance(config as any);
   const app = fastify();
 
   app.get('/1.0/version', async (req, reply) => {

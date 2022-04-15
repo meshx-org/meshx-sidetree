@@ -1,7 +1,6 @@
 export {
   wallet,
   didMethod,
-
   // older / stale
   testVectors,
   filesystem,
