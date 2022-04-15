@@ -1,6 +1,5 @@
 ARG NODE_VERSION=16
 ARG SERVICE
-ARG NODE_AUTH_TOKEN  
 
 ###################################################################
 # Stage 1: Install dependencies only when needed
@@ -8,7 +7,6 @@ ARG NODE_AUTH_TOKEN
 FROM node:${NODE_VERSION}-alpine AS deps
 WORKDIR /workspace-install
 ARG SERVICE
-ARG NODE_AUTH_TOKEN  
 
 ENV NODE_AUTH_TOKEN=$NODE_AUTH_TOKEN
 
@@ -44,9 +42,7 @@ RUN --mount=type=cache,target=/root/.npm,id=npm-cache \
 FROM node:${NODE_VERSION}-alpine AS builder
 WORKDIR /app
 ARG SERVICE
-ARG NODE_AUTH_TOKEN  
 
-ENV NODE_AUTH_TOKEN=$NODE_AUTH_TOKEN
 ENV NODE_ENV=production
 
 COPY . .
@@ -69,9 +65,7 @@ RUN npm run build
 FROM node:${NODE_VERSION}-alpine AS development
 WORKDIR /app
 ARG SERVICE
-ARG NODE_AUTH_TOKEN
 
-ENV NODE_AUTH_TOKEN=$NODE_AUTH_TOKEN
 ENV NODE_ENV=development
 
 COPY --from=deps /workspace-install ./
@@ -86,7 +80,6 @@ CMD npm run start:dev
 FROM node:${NODE_VERSION}-alpine AS production
 WORKDIR /app
 ARG SERVICE
-ARG NODE_AUTH_TOKEN  
 
 ENV NODE_ENV production
 

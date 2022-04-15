@@ -50,8 +50,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           build-args: |
-            SERVICE=${{ inputs.service_package_name }}
-            NODE_AUTH_TOKEN=${{ secrets.GHPR_TOKEN }}
+            SERVICE=${{ inputs.service_name }}
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, scope=${{ github.workflow }}
           push: true
