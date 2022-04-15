@@ -1,7 +1,7 @@
 import { fastify } from 'fastify';
 
 import { getTestNodeIntance as getTestNodeInstance } from '@sidetree/did-method';
-import { MONGO_DB, MONGO_URL, SERVICE_HOST, SERVICE_PORT } from 'config';
+import { MONGO_DB, MONGO_URL, SERVICE_HOST, SERVICE_PORT } from './config';
 
 export const convertSidetreeStatusToHttpStatus = (status: string) => {
   if (status === 'succeeded') {
