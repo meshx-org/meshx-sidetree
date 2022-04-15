@@ -15,7 +15,8 @@ jobs:
     name: MeshX Sidetree
     uses: ./.github/workflows/build-and-push-service.yml
     with:
-      service_name: sidetree-node
+      service_tag: sidetree-node
+      service_name: node
       service_description: MeshX Sidetree Mock Node
       registry_username: ${{ github.repository_owner }}
     secrets:
