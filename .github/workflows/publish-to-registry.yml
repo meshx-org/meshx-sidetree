@@ -12,8 +12,8 @@ on:
 
 jobs:
   build-and-push-to-registry:
-    name: AuthN Web
-    uses: ./.github/workflows/build-push-service.yaml
+    name: MeshX Sidetree
+    uses: ./.github/workflows/build-and-push-service.yaml
     with:
       service_name: sidetree-node
       service_description: MeshX Sidetree Mock Node
