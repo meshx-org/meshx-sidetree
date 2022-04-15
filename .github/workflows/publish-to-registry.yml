@@ -1,0 +1,22 @@
+name: Publish Docker image
+
+on:
+  workflow_dispatch:
+  push:
+    # release unstable wont run if the commit is already a stable release (tagged commit)
+    tags:
+      - 'v*'
+      - '!v*-unstable*'
+    branches:
+      - main
+
+jobs:
+  build-and-push-to-registry:
+    name: AuthN Web
+    uses: ./.github/workflows/build-push-service.yaml
+    with:
+      service_name: sidetree-node
+      service_description: MeshX Sidetree Mock Node
+      registry_username: ${{ github.repository_owner }}
+    secrets:
+      GHPR_TOKEN: ${{ secrets.GHPR_TOKEN }}
