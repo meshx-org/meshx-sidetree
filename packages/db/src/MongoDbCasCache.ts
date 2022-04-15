@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /*
  * The code in this file originated from
  * @see https://github.com/decentralized-identity/sidetree
@@ -19,6 +18,9 @@
  */
 
 import { FetchResult, FetchResultCode } from '@sidetree/common';
+// FIX: error TS2459: Module '"../node_modules/mongodb/mongodb"' declares 'MongoClient' locally, but it is not exported.
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
 import { MongoClient, Collection, Db } from 'mongodb';
 
 export default class MongoDbCasCache {
@@ -26,7 +28,7 @@ export default class MongoDbCasCache {
 
   private collection: Collection<any> | undefined;
   private client?: MongoClient;
-  private db: Db | undefined;
+  private db!: Db;
 
   private static async createCollectionIfNotExist(
     db: Db

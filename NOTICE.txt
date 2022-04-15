@@ -1,5 +1,5 @@
 MeshX Sidetree (https://meshx.co/)
-Copyright MeshX Sidetree Contributors
+Copyright 2022 MeshX Sidetree Contributors
 
 This product includes software developed by
 Transmute Industries Inc. (https://www.transmute.industries/).

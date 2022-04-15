@@ -1,4 +1,7 @@
 import Core from '../Core';
+
+// FIX: error TS2459: Module '"../node_modules/mongodb/mongodb"' declares 'MongoClient' locally, but it is not exported.
+// @ts-expect-error
 import { MongoClient } from 'mongodb';
 
 import { ConsoleLogger } from '@sidetree/common';
