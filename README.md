@@ -16,7 +16,7 @@ parent:
 
 <div align="center">
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/meshx-org/meshx-sidetree?color=g)
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/meshx-org/meshx-sidetree?filename=packages%2Fcore%2Fpackage.json)
 [![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://npm.im/tsdx)
 [![Continuous Integration](https://github.com/meshx-org/meshx-sidetree/workflows/CI/badge.svg)](https://github.com/meshx-org/meshx-sidetree/actions/workflows/ci.yml)
 ![Lines of code](https://img.shields.io/tokei/lines/github/meshx-org/meshx-sidetree)
