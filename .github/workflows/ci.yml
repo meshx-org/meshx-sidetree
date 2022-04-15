@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Begin CI...
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       # We need to fetch main so that "lerna run test --since origin/main" works
       # https://github.com/actions/checkout/issues/118
       - run: |
