@@ -1,16 +1,7 @@
 import { fastify } from 'fastify';
 
 import { getTestNodeIntance as getTestNodeInstance } from '@sidetree/did-method';
-
-const config = {
-  databaseName: 'test-mongodb',
-  mongoDbConnectionString: 'mongodb://localhost:27017/',
-  blockchainServiceUri: '',
-  didMethodName: 'example:sidetree.testnet',
-  batchingIntervalInSeconds: 5,
-  observingIntervalInSeconds: 5,
-  maxConcurrentDownloads: 20,
-};
+import { MONGO_DB, MONGO_URL, SERVICE_HOST, SERVICE_PORT } from 'config';
 
 export const convertSidetreeStatusToHttpStatus = (status: string) => {
   if (status === 'succeeded') {
@@ -20,13 +11,23 @@ export const convertSidetreeStatusToHttpStatus = (status: string) => {
 };
 
 async function main() {
+  const config = {
+    databaseName: MONGO_DB,
+    mongoDbConnectionString: MONGO_URL,
+    blockchainServiceUri: '',
+    didMethodName: 'example:sidetree.testnet',
+    batchingIntervalInSeconds: 5,
+    observingIntervalInSeconds: 5,
+    maxConcurrentDownloads: 20,
+  };
+
   const sidetree = await getTestNodeInstance(config as any);
   const app = fastify();
 
   app.get('/1.0/version', async (req, reply) => {
     const { body, status } = await sidetree.handleGetVersionRequest();
 
-    reply.type('application/json')
+    reply.type('application/json');
     reply.send(body);
     reply.status(convertSidetreeStatusToHttpStatus(status));
   });
@@ -35,7 +36,7 @@ async function main() {
     const { did } = req.params as any;
     const { body, status } = await sidetree.handleResolveRequest(did);
 
-    reply.type('application/json')
+    reply.type('application/json');
     reply.send(body);
     reply.status(convertSidetreeStatusToHttpStatus(status));
   });
@@ -48,7 +49,7 @@ async function main() {
       return JSON.parse(op.operationBuffer.toString());
     });
 
-    reply.type('application/json')
+    reply.type('application/json');
     reply.status(200);
     reply.send({ operations });
   });
@@ -63,12 +64,12 @@ async function main() {
 
     const { body, status } = await sidetree.handleOperationRequest(operation);
 
-    reply.type('application/json')
+    reply.type('application/json');
     reply.send(body);
     reply.status(convertSidetreeStatusToHttpStatus(status));
   });
 
-  app.listen(3000, '0.0.0.0', () => console.log('server is running'));
+  app.listen(SERVICE_PORT, SERVICE_HOST, () => console.log('server is running'));
 }
 
 main();
