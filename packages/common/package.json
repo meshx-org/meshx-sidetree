@@ -24,7 +24,7 @@
     "lint:fix": "tsc --project tsconfig.json --noEmit && eslint **/*.{ts,tsx} --fix"
   },
   "devDependencies": {
-    "@rollup/plugin-replace": "^3.0.0",
+    "@rollup/plugin-replace": "^4.0.0",
     "tsdx": "^0.14.1"
   },
   "dependencies": {

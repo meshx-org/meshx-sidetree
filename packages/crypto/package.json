@@ -28,7 +28,7 @@
     "tsdx": "^0.14.1"
   },
   "dependencies": {
-    "@rollup/plugin-replace": "^3.0.0",
+    "@rollup/plugin-replace": "^4.0.0",
     "@transmute/ed25519-key-pair": "^0.7.0-unstable.8",
     "@transmute/json-web-signature": "^0.7.0-unstable.8",
     "bip39": "^3.0.2",
