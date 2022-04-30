@@ -30,7 +30,7 @@
   "dependencies": {
     "base64url": "^3.0.1",
     "canonicalize": "^1.0.1",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "multiformats": "^9.4.8",
     "multihashes": "^0.4.19"
   },
