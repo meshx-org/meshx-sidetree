@@ -30,7 +30,7 @@ jobs:
 
       - name: Collect Docker metadata
         id: docker_meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           images: ghcr.io/${{ inputs.registry_username }}/${{ inputs.service_tag }}
           tags: |
