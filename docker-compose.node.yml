@@ -3,7 +3,7 @@ version: '3'
 # for testing using the "pretest" npm command.
 services:
   node:
-    image: ghcr.io/meshx-org/sidetree-node:edge
+    image: ghcr.io/meshx-org/sidetree-node:sha-29aa29e
     restart: always
     ports:
       - '3000:3000'
