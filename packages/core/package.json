@@ -32,7 +32,7 @@
     "@rollup/plugin-replace": "^3.0.0",
     "@types/hdkey": "^0.7.1",
     "@types/time-span": "2.0.0",
-    "jest-environment-node": "^27.2.5",
+    "jest-environment-node": "^28.1.2",
     "tsdx": "^0.14.1"
   },
   "dependencies": {
