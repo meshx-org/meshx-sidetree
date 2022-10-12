@@ -31,7 +31,7 @@
     "base64url": "^3.0.1",
     "canonicalize": "^1.0.1",
     "chalk": "^4.1.2",
-    "multiformats": "^9.4.8",
+    "multiformats": "^10.0.0",
     "multihashes": "^0.4.19"
   },
   "gitHead": "e97862f01a5ad9845d82eb57ca46d335a98aeb8b",
