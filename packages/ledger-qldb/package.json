@@ -16,7 +16,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
+    "start": "",
     "build": "tsdx build",
     "test": "cross-env IMPORT_SQLITE=true tsdx test",
     "lint": "tsdx lint src",

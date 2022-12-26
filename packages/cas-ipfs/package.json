@@ -16,7 +16,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
+    "start": "",
     "build": "tsdx build",
     "pretest": "docker-compose up -d ipfs mongo",
     "test": "tsdx test --passWithNoTests",

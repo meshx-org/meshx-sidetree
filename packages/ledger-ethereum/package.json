@@ -16,8 +16,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "start": "",
+    "build": "tsdx build --transpileOnly",
     "pretest": "docker-compose up -d ganache",
     "test": "tsdx test",
     "lint": "tsdx lint src",

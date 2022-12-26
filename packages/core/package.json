@@ -12,21 +12,13 @@
   "version": "0.3.1-unstable.58",
   "license": "Apache-2.0",
   "main": "dist/index.js",
-  "types": "src/index.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
   "engines": {
     "node": ">=10"
-  },
-  "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "pretest": "docker-compose up -d mongo",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint src",
-    "lint:fix": "tsdx lint src --fix"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "^3.0.0",
@@ -36,9 +28,6 @@
     "tsdx": "^0.14.1"
   },
   "dependencies": {
-    "@sidetree/common": "^0.3.1-unstable.58",
-    "@sidetree/crypto": "^0.3.1-unstable.58",
-    "@sidetree/db": "^0.3.1-unstable.58",
     "@transmute/did-key-ed25519": "^0.3.0-unstable.4",
     "@trust/keyto": "^1.0.1",
     "bip39": "^3.0.2",

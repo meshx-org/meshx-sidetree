@@ -21,7 +21,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
+    "start": "",
     "build": "tsdx build",
     "test": "tsdx test --runInBand --passWithNoTests",
     "lint": "tsdx lint src",

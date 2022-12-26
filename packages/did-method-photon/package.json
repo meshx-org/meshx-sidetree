@@ -16,7 +16,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
+    "start": "",
     "build": "tsdx build",
     "pretest": "docker-compose up -d mongo",
     "test": "cross-env IMPORT_SQLITE=true tsdx test --runInBand --passWithNoTests",
