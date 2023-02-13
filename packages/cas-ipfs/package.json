@@ -32,7 +32,7 @@
   "dependencies": {
     "@sidetree/common": "^0.3.1-unstable.58",
     "@sidetree/db": "^0.3.1-unstable.58",
-    "ipfs-http-client": "^49.0.2",
+    "ipfs-http-client": "^60.0.0",
     "it-concat": "^1.0.0"
   },
   "gitHead": "e97862f01a5ad9845d82eb57ca46d335a98aeb8b",
